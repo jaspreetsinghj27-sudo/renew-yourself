@@ -83,7 +83,7 @@ button, summary, a { -webkit-tap-highlight-color: transparent; }
 .mobile-nav summary::-webkit-details-marker { display: none; }
 .mobile-nav div { position: absolute; top: 2.4rem; right: 0; width: 190px; padding: 1.3rem; display: grid; gap: 1rem; background: var(--ink); border: 1px solid var(--line-dark); font: .75rem var(--font-mono); text-transform: uppercase; }
 
-.hero-section { min-height: 100svh; padding: 128px 4vw 34px; position: relative; color: var(--paper); background: var(--ink); }
+.hero-section { min-height: min(100svh, 980px); padding: 128px 4vw 92px; position: relative; color: var(--paper); background: var(--ink); }
 .hero-section::before, .process-section::before, .about-section::before { content: ""; position: absolute; inset: 0; opacity: .06; pointer-events: none; background-image: linear-gradient(var(--paper) 1px, transparent 1px), linear-gradient(90deg, var(--paper) 1px, transparent 1px); background-size: 80px 80px; mask-image: linear-gradient(to bottom, black, transparent 80%); }
 .hero-grid { position: relative; display: grid; grid-template-columns: minmax(0, 1.02fr) minmax(420px, .98fr); gap: 5vw; align-items: center; max-width: 1600px; margin: 0 auto; }
 .eyebrow { display: flex; align-items: center; gap: .7rem; margin: 0 0 2.3rem; color: var(--muted-foreground); font: 400 .66rem/1.25 var(--font-mono); text-transform: uppercase; letter-spacing: .02em; }
