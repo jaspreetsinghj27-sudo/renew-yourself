@@ -234,13 +234,13 @@ function Index() {
       <section id="contact" className="contact-section">
         <p className="eyebrow"><span /> Have a project in mind?</p>
         <h2>Your next website<br />should do more<br /><em>than exist.</em></h2>
-        <div className="contact-bottom"><p>Let’s build something that gives your business the presence it deserves.</p><a href="mailto:hello@example.com">Start a project <MoveUpRight /></a></div>
+        <div className="contact-bottom"><p>Let’s build something that gives your business the presence it deserves.</p><a href="mailto:jaspreetsinghj158@gmail.com">Start a project <MoveUpRight /></a></div>
       </section>
 
       <footer>
         <BrandMark />
         <div><a href="#work">Work</a><a href="#services">Services</a><a href="#about">About</a></div>
-        <div><a href="mailto:hello@example.com">Email</a><a href="#top">Instagram</a><a href="#top">LinkedIn</a></div>
+        <div><a href="mailto:jaspreetsinghj158@gmail.com">Email</a><a href="#top">Instagram</a><a href="#top">LinkedIn</a></div>
         <p>© 2026 S/01 Studio</p>
       </footer>
     </main>
