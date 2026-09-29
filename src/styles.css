@@ -137,15 +137,67 @@ h1 em, h2 em { color: var(--primary); font-family: inherit; font-style: normal; 
 .project-caption h3 { margin: 0 0 1.2rem; font: 600 clamp(2rem, 3vw, 3.7rem)/1 var(--font-display); }
 .project-caption p { margin: 0; max-width: 300px; color: var(--muted-foreground); line-height: 1.65; font-size: .88rem; }
 
-.transformation-section { display: grid; grid-template-columns: .75fr 1.25fr; background: var(--ink); color: var(--paper); }
-.transformation-copy { padding: 8vw 5vw 8vw 4vw; }
-.transformation-copy h2 { font-size: clamp(3.2rem, 5vw, 6rem); }
-.transformation-copy > p:not(.eyebrow) { max-width: 430px; margin: 3rem 0; color: var(--paper-dim); line-height: 1.8; font-size: .9rem; }
-.transformation-points { display: grid; gap: 0; border-top: 1px solid var(--line-dark); }
-.transformation-points span { padding: 1rem 0; border-bottom: 1px solid var(--line-dark); font: .63rem var(--font-mono); text-transform: uppercase; }
-.transformation-visual { position: relative; overflow: hidden; min-height: 650px; }
-.transformation-visual img { width: 100%; height: 100%; object-fit: cover; }
-.comparison-sweep { position: absolute; top: 0; bottom: 0; width: 2px; background: var(--primary); box-shadow: 0 0 30px var(--primary); animation: compare 7s ease-in-out infinite; }
+.transformation-section {
+  display: grid;
+  grid-template-columns: 1fr;
+  background: var(--ink);
+  color: var(--paper);
+}
+.transformation-copy {
+  max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 8vw 4vw 3vw;
+}
+.transformation-copy h2 {
+  font-size: clamp(3.2rem, 5vw, 6rem);
+}
+.transformation-copy > p:not(.eyebrow) {
+  max-width: 600px;
+  margin: 2.5rem 0;
+  color: var(--paper-dim);
+  line-height: 1.8;
+  font-size: 0.95rem;
+}
+.transformation-points {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 2.5rem;
+  border-top: 1px solid var(--line-dark);
+  padding-top: 1.5rem;
+}
+.transformation-points span {
+  padding: 0;
+  border-bottom: 0;
+  font: 0.65rem var(--font-mono);
+  text-transform: uppercase;
+}
+.transformation-visual {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto 6vw;
+  aspect-ratio: 1.75;
+  min-height: 0;
+  border: 1px solid var(--line-dark);
+}
+.transformation-visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+.comparison-sweep {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: var(--primary);
+  box-shadow: 0 0 30px var(--primary);
+  animation: compare 7s ease-in-out infinite;
+}
 
 .services-section { padding: 10rem 4vw; display: grid; grid-template-columns: .8fr 1.2fr; gap: 9vw; }
 .services-intro h2, .process-header h2, .value-copy h2, .about-grid h2 { font-size: clamp(3.4rem, 5.6vw, 6.8rem); }
@@ -213,8 +265,6 @@ footer > p { margin: 0; color: var(--paper-dim); font: .6rem var(--font-mono); t
   .scroll-cue { display: none; }
   .project { grid-template-columns: 100px 1fr; }
   .project-caption { grid-column: 2; }
-  .transformation-section { grid-template-columns: 1fr; }
-  .transformation-visual { min-height: 0; aspect-ratio: 1.75; }
   .process-list { grid-template-columns: repeat(2, 1fr); }
   .process-list article:nth-child(2) { border-right: 0; }
   .process-list article:nth-child(n+3) { border-top: 1px solid var(--line-dark); }
@@ -237,10 +287,11 @@ footer > p { margin: 0; color: var(--paper-dim); font: .6rem var(--font-mono); t
   .project-meta p { margin: 0; }
   .project-caption { grid-column: auto; }
   .project-caption p { max-width: none; }
-  .transformation-copy { padding: 6rem 5vw 4rem; }
+  .transformation-copy { padding: 6rem 5vw 3rem; }
   .transformation-copy h2 { font-size: clamp(3rem, 13vw, 4.5rem); }
-  .transformation-visual { aspect-ratio: 1.25; }
-  .transformation-visual img { object-position: center; }
+  .transformation-points { flex-direction: column; gap: 0; }
+  .transformation-points span { padding: 0.8rem 0; border-bottom: 1px solid var(--line-dark); }
+  .transformation-visual { aspect-ratio: 1.75; margin: 0 5vw 4rem; width: auto; }
   .services-section { grid-template-columns: 1fr; gap: 4rem; }
   .process-list { grid-template-columns: 1fr; }
   .process-list article, .process-list article + article { min-height: 250px; padding: 1.5rem 0; border-right: 0; border-top: 1px solid var(--line-dark); }
