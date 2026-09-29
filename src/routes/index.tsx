@@ -241,7 +241,6 @@ function Index() {
         <BrandMark />
         <div><a href="#work">Work</a><a href="#services">Services</a><a href="#about">About</a></div>
         <div><a href="mailto:jaspreetsinghj158@gmail.com">Email</a><a href="#top">Instagram</a><a href="#top">LinkedIn</a></div>
-        <p>© 2026 S/01 Studio</p>
       </footer>
     </main>
   );
